@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button (click)="goToHome()">Home</ion-button>
+  <ion-button (click)="goToAbout()">About</ion-button>
+  <ion-list>
+    <ion-item>
+      <ion-label>First Name:</ion-label>
+      <ion-input [(ngModel)]="firstName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Last Name:</ion-label>
+      <ion-input [(ngModel)]="lastName"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <h2>
+    Hello, {{ firstName }} {{ lastName }}!!!
+  </h2>
+  <ion-button (click)="saveData()">Save</ion-button>
+
+</ion-content>

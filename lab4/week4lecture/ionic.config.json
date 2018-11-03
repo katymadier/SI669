@@ -1,0 +1,7 @@
+{
+  "name": "week4lecture",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

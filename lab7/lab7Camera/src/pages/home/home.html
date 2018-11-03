@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Picture Taker
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button full ng-click="showhide()" (click)="takePic()">Take Pic</button>
+  <img id="homeImage"[src]="image"/>
+  <div id="timeStamp"></div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "navSpike",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

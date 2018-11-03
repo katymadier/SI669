@@ -5,11 +5,19 @@
 
     <li id="id-btn" style="display:none" class="sortbutton" (click)="sortButton('id')">sort by id</li>
 
-    <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    <li *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
+        <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
     </li>
   </ul>
 
+
+
+
+
+  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!--
 <div *ngIf="selectedHero">
   <h2>{{selectedHero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{selectedHero.id}}</div>
@@ -18,4 +26,4 @@
       <input [(ngModel)]="selectedHero.name" placeholder="name">
     </label>
   </div>
-</div>
+</div> -->
